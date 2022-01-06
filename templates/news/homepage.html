@@ -1,0 +1,343 @@
+{% extends "base.html" %}
+   {% block title %}News Catcher {% endblock %}
+
+   {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+
+    <h1> CNBC NEWS </h1>
+      {% for cnbc in cnbcnews %}
+         <ul>
+       <li>
+         <a href="{{ cnbc.link }}">
+           {{ cnbc.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnbc.published }} by {{ cnbc.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+<h1> CNN </h1>
+
+
+
+      {% for cnn in cnnnews %}
+         <ul>
+       <li>
+         <a href="{{ cnn.link }}">
+           {{ cnn.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnn.published }} by {{ cnn.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+    <h1> Fox News </h1>
+
+
+
+      {% for fox in foxnews %}
+         <ul>
+       <ul>
+         <a href="{{ fox.link }}">
+           {{ fox.title }}
+         </a>
+       </ul>
+       <p class="date">
+         Published {{ fox.published }} by {{ fox.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+
+</div>
+
+  </div>
+</div>
+
+{#This marks the end and start of second div #}
+       <hr>
+
+       <div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+           <h1> MSNBC TOP STORIES </h1>
+      {% for msnbc in msnbcnews %}
+         <ul>
+       <li>
+         <a href="{{ msnbc.link }}">
+           {{ msnbc.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ msnbc.published }} by {{ msnbc.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+<h1> NPR </h1>
+
+
+
+      {% for npr in nprnews %}
+         <ul>
+       <li>
+         <a href="{{ npr.link }}">
+           {{ npr.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ npr.published }} by {{ npr.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+    <h1> Fox News </h1>
+
+
+
+      {% for fox in foxnews %}
+         <ul>
+       <ul>
+         <a href="{{ fox.link }}">
+           {{ fox.title }}
+         </a>
+       </ul>
+       <p class="date">
+         Published {{ fox.published }} by {{ fox.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+
+
+    </div>
+      </div>
+       </div>
+
+         <hr>
+
+       <div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+           <h1> CNBC NEWS </h1>
+      {% for cnbc in cnbcnews %}
+         <ul>
+       <li>
+         <a href="{{ cnbc.link }}">
+           {{ cnbc.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnbc.published }} by {{ cnbc.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+<h1> CNN </h1>
+
+
+
+      {% for cnn in cnnnews %}
+         <ul>
+       <li>
+         <a href="{{ cnn.link }}">
+           {{ cnn.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnn.published }} by {{ cnn.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+    <h1> Fox News </h1>
+
+
+
+      {% for fox in foxnews %}
+         <ul>
+       <ul>
+         <a href="{{ fox.link }}">
+           {{ fox.title }}
+         </a>
+       </ul>
+       <p class="date">
+         Published {{ fox.published }} by {{ fox.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+
+
+    </div>
+      </div>
+       </div>
+
+         <hr>
+
+       <div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+           <h1> CNBC NEWS </h1>
+      {% for cnbc in cnbcnews %}
+         <ul>
+       <li>
+         <a href="{{ cnbc.link }}">
+           {{ cnbc.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnbc.published }} by {{ cnbc.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+<h1> CNN </h1>
+
+
+
+      {% for cnn in cnnnews %}
+         <ul>
+       <li>
+         <a href="{{ cnn.link }}">
+           {{ cnn.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnn.published }} by {{ cnn.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+    <h1> Fox News </h1>
+
+
+
+      {% for fox in foxnews %}
+         <ul>
+       <ul>
+         <a href="{{ fox.link }}">
+           {{ fox.title }}
+         </a>
+       </ul>
+       <ul class="date">
+         Published {{ fox.published }} by {{ fox.media_house_name }}
+       </ul>
+         </ul>
+     {% endfor %}
+
+
+    </div>
+      </div>
+       </div>
+
+         <hr>
+
+       <div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+           <h1> CNBC NEWS </h1>
+      {% for cnbc in cnbcnews %}
+         <ul>
+       <li>
+         <a href="{{ cnbc.link }}">
+           {{ cnbc.title }}
+         </a>
+       </li>
+       <ul class="date">
+         Published {{ cnbc.published }} by {{ cnbc.media_house_name }}
+       </ul>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+<h1> CNN </h1>
+
+
+
+      {% for cnn in cnnnews %}
+         <ul>
+       <li>
+         <a href="{{ cnn.link }}">
+           {{ cnn.title }}
+         </a>
+       </li>
+       <p class="date">
+         Published {{ cnn.published }} by {{ cnn.media_house_name }}
+       </p>
+         </ul>
+     {% endfor %}
+    </div>
+    <div class="col-sm">
+
+
+
+    <h1> Fox News </h1>
+
+
+
+      {% for fox in foxnews %}
+         <ul>
+       <ul>
+         <a href="{{ fox.link }}">
+           {{ fox.title }}
+         </a>
+       </ul>
+       <ul class="date">
+         Published {{ fox.published }} by {{ fox.media_house_name }}
+       </ul>
+         </ul>
+     {% endfor %}
+
+
+    </div>
+      </div>
+       </div>
+
+
+
+   {% endblock %}
